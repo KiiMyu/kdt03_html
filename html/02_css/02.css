@@ -1,0 +1,36 @@
+h2 {
+    color:blue;
+    background-color: skyblue;
+}
+
+p {
+    color:red;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.s1 {
+    background-color: white;
+}
+
+.s2 {
+    background-color: rgb(172, 240, 172);
+}
+
+#a1 {
+    background-color:pink;
+}
+
+article > p {
+    color:green;
+}
+
+footer {
+    background-color: black;
+}
+
+footer li {
+    color:white;
+}
