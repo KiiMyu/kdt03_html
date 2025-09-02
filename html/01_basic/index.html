@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- 이 문서는 html5 문서임. -->
+<html>
+
+<head> <!-- 페이지 머리 -->
+    <title>K-digital 3기</title>
+</head>
+
+<body> <!-- 내용 -->
+    <header> <!-- 머리 표시 태그. -->
+        <nav> <!-- 목차, 네비게이션의 영역이라고 표시. -->
+            <ul> <!-- ul은 그냥 점으로, ol은 숫자로 표시해줌. -->
+                <li><a href="#h2html">HTML</a></li> <!-- #id 를 통해 해당 위치로 책갈피(이동) 가능. -->
+                <li><a href="#h2css">CSS</a></li>
+                <li><a href="#h2js">JavaScript</a></li>
+                <li><a href="#h2react">React</a></li>
+                <li><a href="https://www.facebook.com/">facebook</a></li> <!-- 링크 속성 -->
+                <li><a href="https://www.instagram.com/" target="_blank">instagram(새창 속성)</a></li>
+                <!-- 새창은 target="_blank" 쓸 수 있음! -->
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- 본문 영역임을 태그로 표시. -->
+        <div> <!-- 태그 자체의 기능은 없이 묶어주는 태그. 일종의 Box로 block 요소라고도 한다고 함. -->
+            <!-- 그 외에도 article, section 등의 구분을 할 수 있는 몇가지 태그가 존재함. div로만 하는것보단 구분이 명확해짐. 시멘틱 태그 라고 함. -->
+            <h1>
+                프론트엔드
+                FrontEnd
+            </h1> <!-- 제목 -->
+            <p>웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 HTML, CSS, 자바스크립트가 쓰이며, 요즘은 페이스북에서 개발한 자바스크립트에서 파생된 싱글 페이지
+                애플리케이션
+                형태의
+                리액트가 많이 사용된다.</p>
+        </div>
+
+        <div>
+            <h2 id="h2html">HTML</h2> <!-- 모든 요소에는 id나 class를 붙일 수 있음. -->
+            <img src="../img/html.png" /> <!-- 이미지 추가시, 중간 내용을 넣지 않으므로 끝에 표시. 이런 태그는 src 등과 같은 태그를 사용. -->
+            <p>HTML(HyperText Markup Language)은 웹을 이루는 가장 기초적인 구성 요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용. </p>
+        </div>
+
+        <div>
+            <h2 id="h2css">CSS</h2>
+            <img src="../img/css.png" />
+            <p>Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어</p>
+        </div>
+
+        <div>
+            <h2 id="h2js">JavaScript</h2>
+            <img src="../img/js.png" />
+            <p>웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 just-in-time 컴파일 프로그래밍 언어로, 일급 함수를 지원</p>
+        </div>
+
+        <div>
+            <h2 id="h2react">React</h2>
+            <img src="../img/react.png" />
+            <p>사용자 인터페이스를 만들기 위한 JavaScript 라이브러리</p>
+        </div>
+    </main>
+
+    <footer> <!-- 마무리 영역으로 표시하는 태그 사용.-->
+        <li>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</li>
+        <li>웹개발, 자바/자료구조/AI 프로그래밍, DB SQL, 빅데이터분석, 텐서플로딥러닝, AI학습모델웹서비스프로젝트, 빅데이터분석웹서비스프로젝트</li>
+        <li>부산대학교 과학기술연구동 4층 401호 juri3763@pusan.ac.kr 051-510-3764</li>
+    </footer>
+</body>
+
+</html> <!-- shift alt f 를 사용하면 vs code 에서 자동 줄맞춤을 해줌. -->
