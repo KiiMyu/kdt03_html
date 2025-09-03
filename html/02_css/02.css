@@ -1,30 +1,46 @@
-h2 {
-    color:blue;
-    background-color: skyblue;
-}
-
-p {
-    color:red;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
     background-color: aliceblue;
 }
 
-.s1 {
-    background-color: white;
+header,
+main,
+footer {
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.s2 {
-    background-color: rgb(172, 240, 172);
+article {
+    width: 80%;
+    padding: 20px;
 }
 
-#a1 {
-    background-color:pink;
+article>p {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-size: 20px;
 }
 
-article > p {
-    color:green;
+section.s1 {
+    width: 500px;
+    border: 5px solid;
+    padding: 15px;
+    margin: 15px;
+}
+
+section.s2 {
+    width: 500px;
+    border: 5px solid;
+    padding: 15px;
+    margin: 15px;
+    box-sizing: border-box;
 }
 
 footer {
@@ -32,5 +48,71 @@ footer {
 }
 
 footer li {
-    color:white;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+/* li {
+    display: inline;
+}  */
+
+a {
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+
+    /* 밑줄없앰 */
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    background-color: blue;
+
+}
+
+/* 마우스가 놓이면 스타일 변경. */
+a:hover {
+    background-color: brown;
+}
+
+/* p {
+    font-weight: bold;
+} */
+
+span {
+    font-weight: bold;
+    /* display: inline-block; */
+}
+
+/* ul을 flex로 변경하면, ul의 요소들을 옆으로 박스 형태로 제작함. */
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex direction 의 방향 컨텐츠에 대한 정렬. */
+    align-items: center;
+    /* flex direction 반대 방향 컨텐츠 정렬. */
+
+    width: 100%;
+    height: 150px;
+
+    /* 디버그 확인용 */
+    /* border: 1px solid red; */
+}
+
+@media (max-width : 767px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
