@@ -1,0 +1,30 @@
+body {
+    /* width: 100vw;
+    height:100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    background-color: gainsboro;
+}
+
+header, main, footer {
+    width: 800px;
+
+    background-color: white;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 RGB(0.0 0.0 0.7);
+
+}
+
+header {
+    background-color: black;
+    color: white;
+
+    margin: 25px;
+}
