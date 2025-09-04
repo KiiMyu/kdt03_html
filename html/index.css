@@ -28,3 +28,56 @@ header {
 
     margin: 25px;
 }
+
+header > h1 {
+    text-align: center;
+}
+
+header  span {
+    color: bisque;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    padding: 0px 10px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: right;
+}
+
+footer li {
+    margin: 10px;
+    /* width: 150px;
+    text-align: center; */
+}
+
+a {
+    text-decoration: none;
+}
+
+footer a {
+    display:inline-flex;
+    /* padding: 10px; */
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+footer a:hover {
+    background-color: brown;
+}
+
+main li {
+    border-bottom: 1px solid aqua;
+    padding: 10px;
+}
+
+main li:hover {
+    background-color: gray;
+}
