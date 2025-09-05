@@ -1,0 +1,12 @@
+.inputDiv {
+    margin-bottom: 40px;
+}
+
+/*속성값은 [] 에 넣음. */
+input[type=text] {
+    padding: 8px;
+}
+
+input[readonly] {
+    background-color: beige;
+}
