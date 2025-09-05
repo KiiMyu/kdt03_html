@@ -43,3 +43,67 @@ const check1 = () => {
     ${inputVt == resultV ? "회문입니다." : "회문이 아닙니다."}`;
 
 }
+
+const addingNumber = () => {
+
+    // 1. 사용자가 입력한 문자열 가져오기.
+    const inputV = document.getElementById('txt1').value;
+
+    // 2. 문자열에서 숫자 인식해서 더하기.
+    let sum = 0;
+    // for (let i = 0; i < inputV.length; i++) {
+    //     if (!isNaN(inputV[i])) {
+    //         sum += parseInt(inputV[i]);
+    //     }
+    // }
+
+    // js에서만 사용되는 자동 for문 같은거.
+    for (let i of inputV) {
+        if (!isNaN(i)) {
+            sum += parseInt(i);
+        }
+    }
+
+    // 3. 합계 출력.
+    document.getElementById('txt2').value = sum;
+    document.getElementById('msg').innerHTML = `합계 = <span>"${sum}"</span>`;
+}
+
+// 그냥 만들어본거.
+const addingNumber2 = () => {
+    //1. 사용자 입력 가져오기.
+    const inputV = document.getElementById('txt1').value;
+
+    //2. 문자열 숫자 인식 연속으로 해서, 그 숫자끼리 더하기.
+    let sum = 0;
+    let arrayNumber = '';
+    for (let i = 0; i < inputV.length; i++) {
+        if (!isNaN(inputV[i])) {
+            arrayNumber += inputV[i];
+            //sum += parseInt(inputV[i]);
+        }
+        else {
+            if (arrayNumber != '') {
+                sum += parseInt(arrayNumber);
+                arrayNumber = '';
+            }
+        }
+    }
+
+    if (arrayNumber != '') {
+        sum += parseInt(arrayNumber);
+    }
+
+    //3. 출력.
+    document.getElementById('txt2').value = sum;
+    document.getElementById('msg').innerHTML = `연속합계 = <span>"${sum}"</span>`;
+}
+
+// 취소처리.
+const cancelAll = () => {
+    document.getElementById('txt1').value = '';
+    document.getElementById('txt2').value = '';
+    document.getElementById('msg').innerHTML = '';
+
+    document.getElementById('txt1').focus();
+}
